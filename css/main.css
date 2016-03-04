@@ -24,62 +24,98 @@ html {
     src: url("fonts/distantgalaxy.ttf");
 }
 
+@font-face {
+    font-family: 'Droid Sans Regular';
+    src: url("fonst/droidsans.ttf");
+}
+
 #wrapper {
     width: 100%;
     background-color: #ebebeb;
 }
 
 #container {
-	max-width: 1300px;
-	margin: auto;
+    max-width: 1300px;
+    margin: auto;
     background-color: #d7d7d7;
 }
 
 #head {
     width: 100%;
+    background: #000000;
+    text-align: center;
 }
 
-#logo {
-	width: 30%;
-	margin: auto;
+#logo img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
 }
 
 #type {
-    margin: auto;
-    padding: 0.25em;
+    margin: 0.5em auto;
+    padding: 0.5em;
     background-color: #ffffff;
+    box-shadow: 1px 1px 1px #000000;
 }
 
 #headline {
     margin: auto;
+    font-family: 'Distant Galaxy Regular';
 }
 
 #subhead {
     margin: auto;
+    font-family: 'Droid Sans Regular';
 }
 
 #paragraph {
     margin: 0 auto;
-
 }
 
-#textlink {
-
+#textlink a:link {
+    text-decoration: none;
 }
 
 #images {
-    padding: 0.25em;
-    width: 60%;
+    padding: 0.5em;
 }
 
 #images img {
     height: auto;
 }
 
-#buttons {
-
+#button {
+    padding: 0.5em;
 }
 
-#submitbutton {
+.submitbutton {
+    font-family: 'Distant Galaxy Regular';
+    color: #fffc19;
+    border-radius: 10%;
+    background: linear-gradient(#ff0000, #b21212);
+    padding: 0.5em;
+}
 
+@media all and (min-width: 300px) {
+    #type {
+        width: 90%;
+        margin: auto;
+    }
+
+    #images {
+        width: 100%;
+        margin: auto;
+    }
+
+    #images img {
+        width: 100%;
+        margin: auto;
+    }
+
+    #button {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
 }
