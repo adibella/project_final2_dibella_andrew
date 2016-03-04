@@ -1,33 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 #wrapper {
-
-}
-
-#head {
-
-}
-
-#logo {
-
+    width: 100%;
+    background-color: #ebebeb;
 }
 
 #container {
+	max-width: 1300px;
+	margin: auto;
+    background-color: #959595;
+}
 
+#head {
+    width: 100%;
+}
+
+#logo {
+	width: 30%;
+	margin: auto;
 }
 
 #type {
-
+	width: 60%;
 }
 
 #headline {
-
+    margin: auto;
+    background-color: #0971b2;
 }
 
 #subhead {
-
+    margin: auto;
+    background-color: #0971b2;
 }
 
 #paragraph {
-
+    margin: auto;
+    background-color: #0971b2;
 }
 
 #textlink {
