@@ -19,16 +19,6 @@ html {
     width: 1px;
 }
 
-@font-face {
-    font-family: 'Distant Galaxy Regular';
-    src: url("fonts/distantgalaxy.ttf");
-}
-
-@font-face {
-    font-family: 'Droid Sans Regular';
-    src: url("fonst/droidsans.ttf");
-}
-
 #wrapper {
     width: 100%;
     background-color: #ebebeb;
@@ -61,12 +51,10 @@ html {
 
 #headline {
     margin: auto;
-    font-family: 'Distant Galaxy Regular';
 }
 
 #subhead {
     margin: auto;
-    font-family: 'Droid Sans Regular';
 }
 
 #paragraph {
@@ -117,5 +105,55 @@ html {
         width: 100%;
         margin: auto;
         text-align: center;
+    }
+}
+
+@media all and (min-width: 400px) {
+    #type {
+        width: 90%;
+        margin: auto;
+    }
+
+    #images {
+        width: 100%;
+        margin: auto;
+    }
+
+    #images img {
+        width: 100%;
+        margin: auto;
+    }
+
+    #button {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 700px) {
+    #type {
+        width: 50%;
+        margin: auto;
+        float: left;
+    }
+
+    #images {
+        width: 50%;
+        margin: auto;
+        float: right;
+    }
+
+    #images img {
+        width: 100%;
+        margin: auto;
+        float: right;
+    }
+
+    #button {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        float: left;
     }
 }
