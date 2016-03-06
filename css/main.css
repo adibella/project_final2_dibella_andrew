@@ -51,14 +51,22 @@ html {
 
 #headline {
     margin: auto;
+    font-family: 'Audiowide', cursive;
 }
 
 #subhead {
     margin: auto;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
 }
 
 #paragraph {
     margin: 0 auto;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    letter-spacing: 1px;
 }
 
 #textlink a:link {
@@ -78,7 +86,7 @@ html {
 }
 
 .submitbutton {
-    font-family: 'Distant Galaxy Regular';
+    font-family: 'Audiowide', cursive;
     color: #fffc19;
     border-radius: 10%;
     background: linear-gradient(#ff0000, #b21212);
