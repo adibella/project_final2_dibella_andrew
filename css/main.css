@@ -28,6 +28,7 @@ html {
 #container {
     max-width: 1300px;
     margin: auto;
+    margin-top: 1.5em;
     background-color: #ffffff;
 }
 
@@ -112,14 +113,7 @@ html {
 /* Image Styling */
 
 #images img {
-    height: auto;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-
-#leftimage img {
-    width: 50%;
-    float: left;
-    padding: 0.5em;
+    padding: 0.25em;
 }
 
 /* End Image Styling */
@@ -130,7 +124,6 @@ html {
     padding: 0.25em;
     text-align: center;
     margin: 1.5em auto;
-
 }
 
 #button article {
@@ -188,12 +181,13 @@ html {
     }
 
     #images img {
-        width: 100%;
+        width: 50%;
+        float: left;
         margin: auto;
     }
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
     #leftcolumn {
         width: calc(100% / 2 - 1em);
         margin-left: 0.5em;
