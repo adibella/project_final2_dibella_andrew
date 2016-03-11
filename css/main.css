@@ -21,7 +21,6 @@ html {
 
 #wrapper {
     width: 100%;
-    background-color: #000000;
 }
 
 #container {
@@ -32,7 +31,7 @@ html {
 
 #head {
     width: 100%;
-    background: linear-gradient(#fffc19, #ffffff);
+    background-color: #cbdc58;
     text-align: center;
 }
 
@@ -44,6 +43,8 @@ html {
     margin: 0.5em auto;
     padding: 0.25em;
     background-color: rgba(20, 133, 204, 0.2);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+
 }
 
 #images {
@@ -90,8 +91,13 @@ html {
     color: #ff0000;
 }
 
+#leftimage img {
+    height: auto;
+}
+
 #images img {
     height: auto;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 #button {
@@ -101,11 +107,10 @@ html {
 }
 
 .submitbutton:hover {
-    color: #ffffff;
     background: linear-gradient(#fffc19, #b21212);
     opacity: 1;
     transition: 2s;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 
 }
 
@@ -149,6 +154,5 @@ html {
         width: calc(100% / 2 - 1em);
         margin-right: 0.5em;
         float: right;
-
     }
 }
