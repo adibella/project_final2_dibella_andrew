@@ -19,6 +19,8 @@ html {
     width: 1px;
 }
 
+/* Base Styling */
+
 #wrapper {
     width: 100%;
 }
@@ -29,17 +31,28 @@ html {
     background-color: #ffffff;
 }
 
+/* End Base Styling */
+
+/* Header Styling */
+
 #head {
     width: 100%;
-    background-color: #cbdc58;
+    background-color: rgba(203, 220, 88, 0.7);
     text-align: center;
+    box-shadow: 1px 1px 1px #000000;
 }
 
 #logo img {
+    width: 40%;
     max-width: 300px;
 }
 
-#type {
+/* End Header Styling */
+
+/* Content Styling */
+
+#type,
+#button {
     margin: 0.5em auto;
     padding: 0.25em;
     background-color: rgba(20, 133, 204, 0.2);
@@ -50,8 +63,11 @@ html {
 #images {
     margin: 0.5em auto;
     padding: 0.25em;
-
 }
+
+/* End Content Styling */
+
+/* Text Styling */
 
 #headline {
     margin: auto;
@@ -91,19 +107,34 @@ html {
     color: #ff0000;
 }
 
-#leftimage img {
-    height: auto;
-}
+/* End Text Styling */
+
+/* Image Styling */
 
 #images img {
     height: auto;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
+#leftimage img {
+    width: 50%;
+    float: left;
+    padding: 0.5em;
+}
+
+/* End Image Styling */
+
+/* Button Styling */
+
 #button {
     padding: 0.25em;
     text-align: center;
     margin: 1.5em auto;
+
+}
+
+#button article {
+    display: inline-block;
 }
 
 .submitbutton:hover {
@@ -111,7 +142,6 @@ html {
     opacity: 1;
     transition: 2s;
     letter-spacing: 2px;
-
 }
 
 .submitbutton {
@@ -124,11 +154,31 @@ html {
     letter-spacing: 2px;
 }
 
+.toppingsbutton {
+    font-family: 'Orbitron';
+    color: #ffffff;
+    background: linear-gradient(#1485cc, #0971b2);
+    padding: 0.5em;
+    opacity: 0.9;
+    letter-spacing: 2px;
+}
+
+/* End Button Styling */
+
+/* Media Queries */
+
 @media all and (min-width: 300px) {
     #type {
         width: 90%;
         margin: auto;
         margin-top: 0.25em;
+    }
+
+    #button {
+        width: 80%;
+        margin: auto;
+        margin-top: 1em;
+        padding: 1em;
     }
 
     #images {
@@ -155,4 +205,13 @@ html {
         margin-right: 0.5em;
         float: right;
     }
+
+    #button {
+        width: 90%;
+        margin: auto;
+        margin-top: 1em;
+        padding: 1em;
+    }
 }
+
+/* End Media Queries */
